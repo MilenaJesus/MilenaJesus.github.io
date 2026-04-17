@@ -39,8 +39,14 @@
             <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-6">Projetos em Destaque</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
+                
                 <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
-                    <img src="drgus.png" alt="Dashboard do sistema DrGus" class="w-full h-48 object-cover border-b border-gray-200">
+                    
+                    <div class="relative group">
+                        <img id="img-drgus" src="imagens/drgus1.png" alt="Dashboard do sistema DrGus" class="w-full h-48 object-cover border-b border-gray-200 transition-opacity duration-300">
+                        <button onclick="mudarImagem('drgus', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-left"></i></button>
+                        <button onclick="mudarImagem('drgus', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-right"></i></button>
+                    </div>
                     
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">DrGus - Gestão Odontológica</h3>
@@ -64,7 +70,12 @@
                 </div>
 
                 <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
-                    <img src="ic.png" alt="Gráficos de Análise de Dados" class="w-full h-48 object-cover border-b border-gray-200">
+                    
+                    <div class="relative group">
+                        <img id="img-ic" src="imagens/ic1.png" alt="Gráficos de Análise de Dados" class="w-full h-48 object-cover border-b border-gray-200 transition-opacity duration-300">
+                        <button onclick="mudarImagem('ic', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-left"></i></button>
+                        <button onclick="mudarImagem('ic', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-right"></i></button>
+                    </div>
                     
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Análise de Dados (INMET)</h3>
@@ -72,9 +83,9 @@
                         <ul class="flex flex-wrap gap-2 mb-4">
                             <li class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold">PYTHON</li>
                             <li class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">REDES NEURAIS</li>
-                            <li class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-bold">DATA CLEANING</li>
+                            <li class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-bold">WEKA</li>
                         </ul>
-                        <p class="text-gray-700 text-sm mb-6 flex-grow">Tratamento de grandes volumes de dados meteorológicos para modelos preditivos e garantia de qualidade.</p>
+                        <p class="text-gray-700 text-sm mb-6 flex-grow">Tratamento de grandes volumes de dados agrometeorológicos, seleção de atributos (ReliefF) e treinamento de modelos preditivos MLP.</p>
                     </div>
                 </div>
             </div>
@@ -87,7 +98,7 @@
                 <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Python (Django/Pandas)</span>
                 <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Java</span>
                 <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">SQL & Bancos Relacionais</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Cloud (GCP) - Aprendizado</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Git & Metodologias Ágeis</span>
             </div>
         </section>
     </main>
@@ -96,5 +107,23 @@
         &copy; 2026 Milena Maria - Ponta Grossa, PR.
     </footer>
 
+    <script>
+        // Agora avisamos ao código que as imagens estão na pasta 'imagens/'
+        const imagensDrGus = ['imagens/drgus1.png', 'imagens/drgus2.png', 'imagens/drgus3.png', 'imagens/drgus4.png', 'imagens/drgus5.png']; 
+        const imagensIC = ['imagens/ic1.png', 'imagens/ic2.png', 'imagens/ic3.png', 'imagens/ic4.png', 'imagens/ic5.png', 'imagens/ic6.png'];
+
+        let indexDrGus = 0;
+        let indexIC = 0;
+
+        function mudarImagem(projeto, direcao) {
+            if (projeto === 'drgus') {
+                indexDrGus = (indexDrGus + direcao + imagensDrGus.length) % imagensDrGus.length;
+                document.getElementById('img-drgus').src = imagensDrGus[indexDrGus];
+            } else if (projeto === 'ic') {
+                indexIC = (indexIC + direcao + imagensIC.length) % imagensIC.length;
+                document.getElementById('img-ic').src = imagensIC[indexIC];
+            }
+        }
+    </script>
 </body>
 </html>

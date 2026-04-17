@@ -12,94 +12,96 @@
     <header class="bg-slate-900 text-white py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-4xl font-bold mb-2">Milena Maria</h1>
-            <p class="text-xl text-slate-300 mb-6">Engenharia de Computação @ UEPG</p>
+            <p class="text-xl text-slate-300 mb-6">Engenharia de Computação (UEPG)</p>
             
-            <a href="curriculo.pdf" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+            <a href="curriculo.pdf" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full transition duration-300 shadow-lg">
                 <i class="fas fa-file-pdf mr-2"></i> Baixar Currículo
             </a>
 
-            <div class="mt-8 flex justify-center gap-6 text-2xl">
-                <a href="https://www.linkedin.com/in/milena-de-jesus-maria-6029a3225/" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/MilenaJesus" target="_blank" class="hover:text-gray-400 transition duration-300"><i class="fab fa-github"></i></a>
-                <a href="mailto:milena.mjesus@gmail.com" class="hover:text-red-400 transition duration-300"><i class="fas fa-envelope"></i></a>
+            <div class="mt-8 flex justify-center gap-8 text-2xl">
+                <a href="https://www.linkedin.com/in/milena-de-jesus-maria-6029a3225/" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MilenaJesus" target="_blank" class="hover:text-gray-400 transition"><i class="fab fa-github"></i></a>
+                <a href="mailto:milena.mjesus@gmail.com" class="hover:text-red-400 transition"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto py-12 px-4">
+    <main class="max-w-5xl mx-auto py-12 px-4">
         
-        <section class="mb-12">
+        <section class="mb-16">
             <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-4">Sobre Mim</h2>
             <p class="text-lg leading-relaxed text-gray-700">
-                Sou estudante de Engenharia de Computação na UEPG, atuando na interseção entre o Desenvolvimento Full-Stack e a Ciência de Dados. Tenho experiência prática na construção de sistemas web robustos de ponta a ponta (React/Django) e na modelagem de grandes volumes de dados utilizando Machine Learning. Meu foco é aplicar o rigor analítico para construir soluções digitais seguras, escaláveis e que resolvam problemas reais do negócio.
+                Sou estudante de <strong>Engenharia de Computação na UEPG</strong>, atuando na interseção entre o Desenvolvimento Full-Stack e a Ciência de Dados. Tenho experiência prática na construção de sistemas web robustos (React/Django) e na modelagem de grandes volumes de dados utilizando Inteligência Artificial. Meu foco é unir o rigor analítico da pesquisa científica com a agilidade do desenvolvimento de software para entregar soluções escaláveis e seguras.
             </p>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-6">Projetos em Destaque</h2>
+        <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-8">Destaques Técnicos e Acadêmicos</h2>
+        
+        <div class="grid md:grid-cols-2 gap-10">
             
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
-                    <div class="relative group">
-                        <img id="img-drgus" src="imagens/drgus1.png" alt="Dashboard DrGus" class="w-full h-48 object-cover border-b border-gray-200">
-                        <button onclick="mudarImagem('drgus', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-left"></i></button>
-                        <button onclick="mudarImagem('drgus', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">DrGus - Gestão Odontológica</h3>
-                        <p class="text-sm text-gray-600 mb-4">PWA Full-Stack para gestão de consultório odontológico.</p>
-                        <ul class="flex flex-wrap gap-2 mb-4">
-                            <li class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-bold">REACT.JS</li>
-                            <li class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-bold">DJANGO</li>
-                            <li class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs font-bold">MYSQL</li>
-                        </ul>
-                        <p class="text-gray-700 text-sm mb-6 flex-grow">Sistema completo com controle de agenda, prontuários, orçamentos com odontograma e gestão financeira.</p>
-                        <div class="flex gap-3 mt-auto">
-                            <a href="https://github.com/MilenaJesus/drgus-frontend" target="_blank" class="flex-1 text-center bg-gray-800 hover:bg-gray-900 text-white text-sm font-bold py-2 px-4 rounded transition">Código</a>
-                            <a href="https://www.figma.com/proto/2d3My5CXNQFL7vtYt36ZnX/desktop?node-id=0-1&t=Ec8gP4aRdWsyydxf-1" target="_blank" class="flex-1 text-center border border-gray-300 hover:bg-gray-100 text-gray-800 text-sm font-bold py-2 px-4 rounded transition">Figma</a>
-                        </div>
-                    </div>
+            <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-xl transition duration-300">
+                <div class="relative group">
+                    <img id="img-drgus" src="imagens/drgus1.png" alt="Sistema DrGus" class="w-full h-56 object-cover border-b border-gray-200">
+                    <button onclick="mudarImagem('drgus', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="mudarImagem('drgus', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-right"></i></button>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
-                    <div class="relative group">
-                        <img id="img-ic" src="imagens/ic1.png" alt="Análise de Dados" class="w-full h-48 object-cover border-b border-gray-200">
-                        <button onclick="mudarImagem('ic', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-left"></i></button>
-                        <button onclick="mudarImagem('ic', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Análise de Dados (INMET)</h3>
-                        <p class="text-sm text-gray-600 mb-4">Pesquisa em Ciência de Dados.</p>
-                        <ul class="flex flex-wrap gap-2 mb-4">
-                            <li class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold">PYTHON</li>
-                            <li class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">MLP</li>
-                            <li class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-bold">WEKA</li>
-                        </ul>
-                        <p class="text-gray-700 text-sm mb-6 flex-grow">Tratamento de dados meteorológicos massivos e treinamento de Redes Neurais para predição climática.</p>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-900">DrGus - Gestão Odontológica</h3>
+                    <p class="text-xs text-blue-600 font-bold mb-4 uppercase">Full-Stack Development • PWA</p>
+                    <p class="text-gray-700 text-sm mb-6 flex-grow">
+                        Arquitetura completa de um sistema de gestão odontológica. Inclui módulos de <strong>agenda dinâmica, prontuários, anamnese com geração de PDF, odontograma interativo</strong> e gestão financeira com filtros avançados. Desenvolvido com foco em segurança de dados e experiência do usuário (UX/UI).
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/MilenaJesus/drgus-frontend" target="_blank" class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white text-sm font-bold py-2 px-4 rounded transition">Código</a>
+                        <a href="https://www.figma.com/proto/2d3My5CXNQFL7vtYt36ZnX/desktop?node-id=0-1" target="_blank" class="flex-1 text-center border border-slate-300 hover:bg-slate-50 text-slate-800 text-sm font-bold py-2 px-4 rounded transition">Figma</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-4">Tech Stack</h2>
-            <div class="flex flex-wrap gap-4 text-slate-700">
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">JavaScript / TypeScript (React)</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Python (Django / Pandas)</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">SQL (MySQL / PostgreSQL)</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Ciência de Dados (Weka / MLP)</span>
+            <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-xl transition duration-300">
+                <div class="relative group">
+                    <img id="img-ic" src="imagens/ic1.png" alt="Pesquisa Científica" class="w-full h-56 object-cover border-b border-gray-200">
+                    <button onclick="mudarImagem('ic', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-left"></i></button>
+                    <button onclick="mudarImagem('ic', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-900">Engenharia de Dados e I.A.</h3>
+                    <p class="text-xs text-orange-600 font-bold mb-4 uppercase">Pesquisa Acadêmica • Machine Learning</p>
+                    <p class="text-gray-700 text-sm mb-4">
+                        Modelagem preditiva sobre <strong>Big Data meteorológico (INMET)</strong>. Aplicação de <strong>Redes Neurais MLP</strong>, pré-processamento de dados massivos e algoritmos de seleção de atributos (ReliefF e Correlação) para otimização de métricas de erro (RMSE/MAE).
+                    </p>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-auto">
+                        <h4 class="text-xs font-bold text-slate-500 uppercase mb-3 tracking-tighter">Publicações e Validações:</h4>
+                        <ul class="text-xs text-gray-600 space-y-2">
+                            <li><i class="fas fa-bookmark text-blue-600 mr-2"></i><strong>COBICET:</strong> Revisão Sistemática da Literatura em algoritmos de IC.</li>
+                            <li><i class="fas fa-check-circle text-blue-600 mr-2"></i><strong>EAIC:</strong> Modelagem e análise de performance em redes neurais.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-6">Tech Stack</h2>
+            <div class="flex flex-wrap gap-4">
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded shadow-sm font-medium text-slate-700">React / TypeScript</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded shadow-sm font-medium text-slate-700">Django / Python</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded shadow-sm font-medium text-slate-700">MySQL / PostgreSQL</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded shadow-sm font-medium text-slate-700">Weka / Machine Learning</span>
+                <span class="bg-white border border-slate-300 px-4 py-2 rounded shadow-sm font-medium text-slate-700">Git / Figma</span>
             </div>
         </section>
     </main>
 
-    <footer class="text-center py-8 text-gray-500 text-sm border-t border-gray-200 mt-12">
-        &copy; 2026 Milena Maria - Ponta Grossa, PR.
+    <footer class="text-center py-10 text-gray-400 text-sm border-t border-gray-100 mt-12">
+        &copy; 2026 Milena Maria — Ponta Grossa, PR.
     </footer>
 
     <script>
-        const imagensDrGus = ['imagens/drgus1.png', 'imagens/drgus2.png', 'imagens/drgus3.png']; 
-        const imagensIC = ['imagens/ic1.png', 'imagens/ic2.png', 'imagens/ic3.png', 'imagens/ic4.png'];
+        // Adicione aqui os nomes exatos das imagens que você subiu na pasta 'imagens'
+        const imagensDrGus = ['imagens/drgus1.png', 'imagens/drgus2.png', 'imagens/drgus3.png', 'imagens/drgus4.png', 'imagens/drgus5.png']; 
+        const imagensIC = ['imagens/ic1.png', 'imagens/ic2.png', 'imagens/ic3.png', 'imagens/ic4.png', 'imagens/ic5.png'];
 
         let iDrGus = 0; let iIC = 0;
 

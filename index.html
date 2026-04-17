@@ -31,7 +31,7 @@
         <section class="mb-12">
             <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-4">Sobre Mim</h2>
             <p class="text-lg leading-relaxed text-gray-700">
-                Desenvolvedora Full-Stack e Pesquisadora em Ciência de Dados. Atuo no equilíbrio entre a construção de produtos digitais robustos (React/Python) e a análise rigorosa de dados climáticos e agrometeorológicos.
+                Sou estudante de Engenharia de Computação na UEPG, atuando na interseção entre o Desenvolvimento Full-Stack e a Ciência de Dados. Tenho experiência prática na construção de sistemas web robustos de ponta a ponta (React/Django) e na modelagem de grandes volumes de dados utilizando Machine Learning. Meu foco é aplicar o rigor analítico para construir soluções digitais seguras, escaláveis e que resolvam problemas reais do negócio.
             </p>
         </section>
 
@@ -41,51 +41,42 @@
             <div class="grid md:grid-cols-2 gap-8">
                 
                 <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
-                    
                     <div class="relative group">
-                        <img id="img-drgus" src="imagens/drgus1.png" alt="Dashboard do sistema DrGus" class="w-full h-48 object-cover border-b border-gray-200 transition-opacity duration-300">
-                        <button onclick="mudarImagem('drgus', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-left"></i></button>
-                        <button onclick="mudarImagem('drgus', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-right"></i></button>
+                        <img id="img-drgus" src="imagens/drgus1.png" alt="Dashboard DrGus" class="w-full h-48 object-cover border-b border-gray-200">
+                        <button onclick="mudarImagem('drgus', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-left"></i></button>
+                        <button onclick="mudarImagem('drgus', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-right"></i></button>
                     </div>
-                    
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">DrGus - Gestão Odontológica</h3>
-                        <p class="text-sm text-gray-600 mb-4">PWA Full-Stack para gestão de clínicas.</p>
+                        <p class="text-sm text-gray-600 mb-4">PWA Full-Stack para gestão de consultório odontológico.</p>
                         <ul class="flex flex-wrap gap-2 mb-4">
                             <li class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-bold">REACT.JS</li>
                             <li class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-bold">DJANGO</li>
                             <li class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs font-bold">MYSQL</li>
                         </ul>
-                        <p class="text-gray-700 text-sm mb-6 flex-grow">Atuação em todo o ciclo: requisitos, prototipagem no Figma, modelagem de dados e implementação de painéis e relatórios.</p>
-                        
+                        <p class="text-gray-700 text-sm mb-6 flex-grow">Sistema completo com controle de agenda, prontuários, orçamentos com odontograma e gestão financeira.</p>
                         <div class="flex gap-3 mt-auto">
-                            <a href="https://github.com/MilenaJesus/drgus-frontend" target="_blank" class="flex-1 text-center bg-gray-800 hover:bg-gray-900 text-white text-sm font-bold py-2 px-4 rounded transition duration-300">
-                                <i class="fab fa-github mr-1"></i> Código
-                            </a>
-                            <a href="https://www.figma.com/proto/2d3My5CXNQFL7vtYt36ZnX/desktop?node-id=0-1&t=Ec8gP4aRdWsyydxf-1" target="_blank" class="flex-1 text-center border border-gray-300 hover:bg-gray-100 text-gray-800 text-sm font-bold py-2 px-4 rounded transition duration-300">
-                                <i class="fab fa-figma mr-1"></i> Figma
-                            </a>
+                            <a href="https://github.com/MilenaJesus/drgus-frontend" target="_blank" class="flex-1 text-center bg-gray-800 hover:bg-gray-900 text-white text-sm font-bold py-2 px-4 rounded transition">Código</a>
+                            <a href="https://www.figma.com/proto/2d3My5CXNQFL7vtYt36ZnX/desktop?node-id=0-1&t=Ec8gP4aRdWsyydxf-1" target="_blank" class="flex-1 text-center border border-gray-300 hover:bg-gray-100 text-gray-800 text-sm font-bold py-2 px-4 rounded transition">Figma</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
-                    
                     <div class="relative group">
-                        <img id="img-ic" src="imagens/ic1.png" alt="Gráficos de Análise de Dados" class="w-full h-48 object-cover border-b border-gray-200 transition-opacity duration-300">
-                        <button onclick="mudarImagem('ic', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-left"></i></button>
-                        <button onclick="mudarImagem('ic', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center hover:bg-black"><i class="fas fa-chevron-right"></i></button>
+                        <img id="img-ic" src="imagens/ic1.png" alt="Análise de Dados" class="w-full h-48 object-cover border-b border-gray-200">
+                        <button onclick="mudarImagem('ic', -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-left"></i></button>
+                        <button onclick="mudarImagem('ic', 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/60 text-white w-8 h-8 rounded-full opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><i class="fas fa-chevron-right"></i></button>
                     </div>
-                    
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Análise de Dados (INMET)</h3>
-                        <p class="text-sm text-gray-600 mb-4">Pesquisa e Ciência de Dados.</p>
+                        <p class="text-sm text-gray-600 mb-4">Pesquisa em Ciência de Dados.</p>
                         <ul class="flex flex-wrap gap-2 mb-4">
                             <li class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold">PYTHON</li>
-                            <li class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">REDES NEURAIS</li>
+                            <li class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">MLP</li>
                             <li class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-bold">WEKA</li>
                         </ul>
-                        <p class="text-gray-700 text-sm mb-6 flex-grow">Tratamento de grandes volumes de dados agrometeorológicos, seleção de atributos (ReliefF) e treinamento de modelos preditivos MLP.</p>
+                        <p class="text-gray-700 text-sm mb-6 flex-grow">Tratamento de dados meteorológicos massivos e treinamento de Redes Neurais para predição climática.</p>
                     </div>
                 </div>
             </div>
@@ -94,11 +85,10 @@
         <section>
             <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-4">Tech Stack</h2>
             <div class="flex flex-wrap gap-4 text-slate-700">
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">JavaScript / TypeScript</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Python (Django/Pandas)</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Java</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">SQL & Bancos Relacionais</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Git & Metodologias Ágeis</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">JavaScript / TypeScript (React)</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Python (Django / Pandas)</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">SQL (MySQL / PostgreSQL)</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Ciência de Dados (Weka / MLP)</span>
             </div>
         </section>
     </main>
@@ -108,20 +98,18 @@
     </footer>
 
     <script>
-        // Agora avisamos ao código que as imagens estão na pasta 'imagens/'
-        const imagensDrGus = ['imagens/drgus1.png', 'imagens/drgus2.png', 'imagens/drgus3.png', 'imagens/drgus4.png', 'imagens/drgus5.png']; 
-        const imagensIC = ['imagens/ic1.png', 'imagens/ic2.png', 'imagens/ic3.png', 'imagens/ic4.png', 'imagens/ic5.png', 'imagens/ic6.png'];
+        const imagensDrGus = ['imagens/drgus1.png', 'imagens/drgus2.png', 'imagens/drgus3.png']; 
+        const imagensIC = ['imagens/ic1.png', 'imagens/ic2.png', 'imagens/ic3.png', 'imagens/ic4.png'];
 
-        let indexDrGus = 0;
-        let indexIC = 0;
+        let iDrGus = 0; let iIC = 0;
 
-        function mudarImagem(projeto, direcao) {
+        function mudarImagem(projeto, dir) {
             if (projeto === 'drgus') {
-                indexDrGus = (indexDrGus + direcao + imagensDrGus.length) % imagensDrGus.length;
-                document.getElementById('img-drgus').src = imagensDrGus[indexDrGus];
-            } else if (projeto === 'ic') {
-                indexIC = (indexIC + direcao + imagensIC.length) % imagensIC.length;
-                document.getElementById('img-ic').src = imagensIC[indexIC];
+                iDrGus = (iDrGus + dir + imagensDrGus.length) % imagensDrGus.length;
+                document.getElementById('img-drgus').src = imagensDrGus[iDrGus];
+            } else {
+                iIC = (iIC + dir + imagensIC.length) % imagensIC.length;
+                document.getElementById('img-ic').src = imagensIC[iIC];
             }
         }
     </script>

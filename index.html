@@ -29,8 +29,22 @@
         <!-- SOBRE -->
         <section class="mb-20 text-center">
             <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
-            <p class="text-gray-700 max-w-3xl mx-auto">
-                Estudante de Engenharia de Computação com experiência em desenvolvimento Full-Stack e Inteligência Artificial.
+
+            <p class="text-gray-700 max-w-3xl mx-auto mb-4 leading-relaxed">
+                Sou estudante de <strong>Engenharia de Computação na UEPG</strong>, com experiência prática no desenvolvimento de 
+                <strong>sistemas web Full-Stack</strong> e na aplicação de <strong>Inteligência Artificial</strong> para análise e modelagem de dados.
+            </p>
+
+            <p class="text-gray-700 max-w-3xl mx-auto mb-4 leading-relaxed">
+                Tenho atuado na construção de aplicações completas, utilizando tecnologias como 
+                <strong>React, Django e bancos de dados relacionais</strong>, com foco em organização de dados, 
+                usabilidade e estruturação de sistemas reais.
+            </p>
+
+            <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Na área de pesquisa, desenvolvi modelos preditivos com <strong>Redes Neurais MLP</strong>, aplicados à 
+                análise de variáveis climáticas e doenças agrícolas, alcançando resultados relevantes e publicados em eventos científicos.
+                Minha formação combina <strong>base acadêmica sólida</strong> com <strong>prática em desenvolvimento de software</strong>.
             </p>
         </section>
 
@@ -41,19 +55,9 @@
             <div class="grid md:grid-cols-2 gap-10 items-center">
 
                 <!-- IMAGEM -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                <div class="relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
                     <img id="img-drgus" src="images/drgus1.png"
-                         class="w-full h-64 md:h-72 lg:h-80 object-contain transition">
-
-                    <button onclick="mudarImagem('drgus', -1)"
-                        class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    <button onclick="mudarImagem('drgus', 1)"
-                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                         class="w-full h-64 md:h-72 lg:h-80 object-contain">
                 </div>
 
                 <!-- TEXTO -->
@@ -61,14 +65,38 @@
                     <h3 class="text-xl font-bold mb-2">DrGus — Gestão Odontológica</h3>
                     <p class="text-blue-600 font-bold text-sm mb-3">FULL-STACK • PWA</p>
 
+                    <p class="text-gray-700 mb-4">
+                        O DrGus é um sistema desenvolvido para a gestão completa de um consultório odontológico, 
+                        com o objetivo de centralizar informações clínicas e administrativas em uma única aplicação.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        A solução foi implementada como uma <strong>Progressive Web App (PWA)</strong>, utilizando 
+                        <strong>Django no backend</strong>, <strong>React no frontend</strong> e banco de dados relacional, 
+                        permitindo acesso tanto em desktop quanto em dispositivos móveis.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        Entre as principais funcionalidades estão:
+                    </p>
+
+                    <ul class="text-gray-700 text-sm space-y-2 mb-4">
+                        <li>• Agendamento de consultas com controle de horários</li>
+                        <li>• Registro de pacientes e histórico clínico</li>
+                        <li>• Odontograma digital para planejamento de tratamentos</li>
+                        <li>• Controle financeiro com notificações de parcelas</li>
+                    </ul>
+
                     <p class="text-gray-700 mb-5">
-                        Sistema para gestão de consultório odontológico com agendamento, odontograma,
-                        anamneses e controle financeiro com notificações.
+                        O sistema foi projetado com foco em resolver limitações reais do processo atual do cliente, 
+                        melhorando a organização, reduzindo erros manuais e aumentando a eficiência no atendimento.
                     </p>
 
                     <div class="flex gap-3">
-                        <a href="#" class="bg-slate-900 text-white px-4 py-2 rounded">Código</a>
-                        <a href="#" class="border px-4 py-2 rounded">Figma</a>
+                        <a href="https://github.com/MilenaJesus/drgus-frontend" target="_blank"
+                           class="bg-slate-900 text-white px-4 py-2 rounded">Código</a>
+                        <a href="https://www.figma.com/proto/2d3My5CXNQFL7vtYt36ZnX/desktop?node-id=0-1" target="_blank"
+                           class="border px-4 py-2 rounded">Figma</a>
                     </div>
                 </div>
 
@@ -82,67 +110,43 @@
                 <!-- TEXTO -->
                 <div>
                     <h3 class="text-xl font-bold mb-2">Modelagem Preditiva com IA</h3>
-                    <p class="text-orange-600 font-bold text-sm mb-3">DATA SCIENCE</p>
+                    <p class="text-orange-600 font-bold text-sm mb-3">DATA SCIENCE • PESQUISA</p>
 
-                    <p class="text-gray-700 mb-5">
-                        Modelo com Redes Neurais MLP aplicado à previsão de doenças no trigo,
-                        com correlação de 0,888.
+                    <p class="text-gray-700 mb-4">
+                        Este projeto de iniciação científica teve como objetivo analisar a relação entre variáveis climáticas 
+                        e a severidade de doenças na cultura do trigo, utilizando técnicas de aprendizado de máquina.
                     </p>
+
+                    <p class="text-gray-700 mb-4">
+                        Foi desenvolvido um modelo baseado em <strong>Redes Neurais Multilayer Perceptron (MLP)</strong>, 
+                        utilizando a ferramenta WEKA, com aplicação de pré-processamento de dados e ajuste de hiperparâmetros.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        O modelo final alcançou uma <strong>correlação de 0,888</strong>, indicando boa capacidade preditiva.
+                        Os dados utilizados foram provenientes do <strong>INMET</strong> e da <strong>Embrapa Trigo</strong>.
+                    </p>
+
+                    <p class="text-gray-700 mb-4">
+                        Os resultados foram publicados em eventos científicos:
+                    </p>
+
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>• CoBICET 2025 — Revisão bibliográfica</li>
+                        <li>• EAIC 2025 — Artigo completo com modelagem preditiva</li>
+                    </ul>
                 </div>
 
                 <!-- IMAGEM -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                <div class="relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
                     <img id="img-ic" src="images/ic1.png"
-                         class="w-full h-64 md:h-72 lg:h-80 object-contain transition">
-
-                    <button onclick="mudarImagem('ic', -1)"
-                        class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    <button onclick="mudarImagem('ic', 1)"
-                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                         class="w-full h-64 md:h-72 lg:h-80 object-contain">
                 </div>
 
             </div>
         </section>
 
     </main>
-
-    <script>
-        const imagensDrGus = [
-            'images/drgus1.png',
-            'images/drgus2.png',
-            'images/drgus3.png',
-            'images/drgus4.png',
-            'images/drgus5.png',
-            'images/drgus17.png'
-        ];
-
-        const imagensIC = [
-            'images/ic1.png',
-            'images/ic2.png',
-            'images/ic3.png',
-            'images/ic4.png',
-            'images/ic5.png',
-            'images/ic6.png'
-        ];
-
-        let iDrGus = 0;
-        let iIC = 0;
-
-        function mudarImagem(projeto, dir) {
-            if (projeto === 'drgus') {
-                iDrGus = (iDrGus + dir + imagensDrGus.length) % imagensDrGus.length;
-                document.getElementById('img-drgus').src = imagensDrGus[iDrGus];
-            } else {
-                iIC = (iIC + dir + imagensIC.length) % imagensIC.length;
-                document.getElementById('img-ic').src = imagensIC[iIC];
-            }
-        }
-    </script>
 
 </body>
 </html>

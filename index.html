@@ -12,11 +12,16 @@
     <header class="bg-slate-900 text-white py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-4xl font-bold mb-2">Milena Maria</h1>
-            <p class="text-xl text-slate-300">Engenharia de Computação @ UEPG</p>
-            <div class="mt-6 flex justify-center gap-6 text-2xl">
-                <a href="LINK_DO_SEU_LINKEDIN" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-                <a href="LINK_DO_SEU_GITHUB" class="hover:text-gray-400"><i class="fab fa-github"></i></a>
-                <a href="mailto:milena.mjesus@gmail.com" class="hover:text-red-400"><i class="fas fa-envelope"></i></a>
+            <p class="text-xl text-slate-300 mb-6">Engenharia de Computação @ UEPG</p>
+            
+            <a href="curriculo.pdf" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                <i class="fas fa-file-pdf mr-2"></i> Baixar Currículo
+            </a>
+
+            <div class="mt-8 flex justify-center gap-6 text-2xl">
+                <a href="https://www.linkedin.com/in/milena-de-jesus-maria-6029a3225/" target="_blank" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MilenaJesus" target="_blank" class="hover:text-gray-400 transition duration-300"><i class="fab fa-github"></i></a>
+                <a href="mailto:milena.mjesus@gmail.com" class="hover:text-red-400 transition duration-300"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </header>
@@ -25,7 +30,7 @@
         
         <section class="mb-12">
             <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-4">Sobre Mim</h2>
-            <p class="text-lg leading-relaxed">
+            <p class="text-lg leading-relaxed text-gray-700">
                 Desenvolvedora Full-Stack e Pesquisadora em Ciência de Dados. Atuo no equilíbrio entre a construção de produtos digitais robustos (React/Python) e a análise rigorosa de dados climáticos e agrometeorológicos.
             </p>
         </section>
@@ -34,26 +39,43 @@
             <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-6">Projetos em Destaque</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">DrGus - Gestão Odontológica</h3>
-                    <p class="text-sm text-gray-600 mb-4">PWA Full-Stack para gestão de clínicas.</p>
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-bold">REACT.JS</li>
-                        <li class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-bold">DJANGO</li>
-                        <li class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs font-bold">MYSQL</li>
-                    </ul>
-                    <p class="text-gray-700 text-sm mb-4">Atuação em todo o ciclo: requisitos, prototipagem no Figma, modelagem de dados e implementação.</p>
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
+                    <img src="drgus.png" alt="Dashboard do sistema DrGus" class="w-full h-48 object-cover border-b border-gray-200">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">DrGus - Gestão Odontológica</h3>
+                        <p class="text-sm text-gray-600 mb-4">PWA Full-Stack para gestão de clínicas.</p>
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-bold">REACT.JS</li>
+                            <li class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-bold">DJANGO</li>
+                            <li class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs font-bold">MYSQL</li>
+                        </ul>
+                        <p class="text-gray-700 text-sm mb-6 flex-grow">Atuação em todo o ciclo: requisitos, prototipagem no Figma, modelagem de dados e implementação de painéis e relatórios.</p>
+                        
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/MilenaJesus/drgus-frontend" target="_blank" class="flex-1 text-center bg-gray-800 hover:bg-gray-900 text-white text-sm font-bold py-2 px-4 rounded transition duration-300">
+                                <i class="fab fa-github mr-1"></i> Código
+                            </a>
+                            <a href="https://www.figma.com/proto/2d3My5CXNQFL7vtYt36ZnX/desktop?node-id=0-1&t=Ec8gP4aRdWsyydxf-1" target="_blank" class="flex-1 text-center border border-gray-300 hover:bg-gray-100 text-gray-800 text-sm font-bold py-2 px-4 rounded transition duration-300">
+                                <i class="fab fa-figma mr-1"></i> Figma
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Análise de Dados (INMET/Embrapa)</h3>
-                    <p class="text-sm text-gray-600 mb-4">Pesquisa e Ciência de Dados.</p>
-                    <ul class="flex flex-wrap gap-2 mb-4">
-                        <li class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold">PYTHON</li>
-                        <li class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">REDES NEURAIS</li>
-                        <li class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-bold">DATA CLEANING</li>
-                    </ul>
-                    <p class="text-gray-700 text-sm mb-4">Tratamento de grandes volumes de dados meteorológicos para modelos preditivos e garantia de qualidade.</p>
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col hover:shadow-lg transition duration-300">
+                    <img src="ic.png" alt="Gráficos de Análise de Dados" class="w-full h-48 object-cover border-b border-gray-200">
+                    
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Análise de Dados (INMET)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Pesquisa e Ciência de Dados.</p>
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold">PYTHON</li>
+                            <li class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-bold">REDES NEURAIS</li>
+                            <li class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-bold">DATA CLEANING</li>
+                        </ul>
+                        <p class="text-gray-700 text-sm mb-6 flex-grow">Tratamento de grandes volumes de dados meteorológicos para modelos preditivos e garantia de qualidade.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,16 +83,16 @@
         <section>
             <h2 class="text-2xl font-bold border-b-2 border-slate-900 pb-2 mb-4">Tech Stack</h2>
             <div class="flex flex-wrap gap-4 text-slate-700">
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic">JavaScript / TypeScript</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic">Python (Django/Pandas)</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic">Java</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic">SQL & Bancos Relacionais</span>
-                <span class="border border-slate-300 px-4 py-2 rounded-full italic">Cloud (GCP) - Aprendizado</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">JavaScript / TypeScript</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Python (Django/Pandas)</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Java</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">SQL & Bancos Relacionais</span>
+                <span class="border border-slate-300 px-4 py-2 rounded-full italic hover:bg-slate-100 transition">Cloud (GCP) - Aprendizado</span>
             </div>
         </section>
     </main>
 
-    <footer class="text-center py-8 text-gray-500 text-sm">
+    <footer class="text-center py-8 text-gray-500 text-sm border-t border-gray-200 mt-12">
         &copy; 2026 Milena Maria - Ponta Grossa, PR.
     </footer>
 
